@@ -8,59 +8,60 @@ public class Player : MonoBehaviour
 	[Header("Player Controller")]
 	public Animator anim;
 	public Transform interacPoint;
-	public LeftJoystick leftJoystick;
-      public FixedTouchField cameraTouchField;
-	public CinemachineFreeLook cinemachineFreeLook;
+	//public LeftJoystick leftJoystick;
+    //public FixedTouchField cameraTouchField;
+	//public CinemachineFreeLook cinemachineFreeLook;
       
-      [Header("Controller Variables")]
+    [Header("Controller Variables")]
 	[Range(0, 200)] public float hp;
-      [Range(0, 10)] public float walkSpeed;
-      [Range(0, 10)] public float runSpeed;
-      [Range(0, 25)] public float turnSpeed;
+	[Range(0, 10)] public float walkSpeed;
+	[Range(0, 10)] public float runSpeed;
+	[Range(0, 25)] public float turnSpeed;
 	public GameObject shieldDome;
 
-      [Header("Playable Variables")]
+    [Header("Playable Variables")]
 	public int score;
 	public int ammo;
 
-      private Transform _camTrans;
+    private Transform camTrans;
 	private Vector3 movement;
-      private Vector3 relativeMovement;
+    private Vector3 relativeMovement;
 	private Quaternion newRotation;
-	private float speed;
 	private Vector3 leftJoystickInput;
+	private float speed;
 
 	void Interact()
 	{
-            Collider[] hitColliders = Physics.OverlapSphere(interacPoint.position, 1);
+        Collider[] hitColliders = Physics.OverlapSphere(interacPoint.position, 1);
             
 		for (int i = 0; i < hitColliders.Length; i++)
 		{
 			var interact = hitColliders[i].gameObject.GetComponent<GenericInteractable>();
-		    	if (interact != null)
+		    
+			if (interact != null)
 			{
-                        interact.Interact();
+                interact.Interact();
 				return;
 			}
 		}
 	}
 
-	private void Start()
+	void Start()
 	{
-            _camTrans = Camera.main.transform;
+        camTrans = Camera.main.transform;
 	}
 
-	
-	// Update is called once per frame
 	void Update () 
 	{
-            cinemachineFreeLook.m_XAxis.Value += cameraTouchField.Movement.x * 5 * Time.deltaTime;
-            cinemachineFreeLook.m_YAxis.Value += cameraTouchField.Movement.y / 75 * Time.deltaTime;
+        //cinemachineFreeLook.m_XAxis.Value += cameraTouchField.Movement.x * 5 * Time.deltaTime;
+        //cinemachineFreeLook.m_YAxis.Value += cameraTouchField.Movement.y / 75 * Time.deltaTime;
 
-            leftJoystickInput = leftJoystick.GetInputDirection();
-		// movement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-            movement = new Vector3(leftJoystickInput.x, 0, leftJoystickInput.y);
-		relativeMovement = _camTrans.TransformVector(movement);
+        //leftJoystickInput = leftJoystick.GetInputDirection();
+		
+        //movement = new Vector3(leftJoystickInput.x, 0, leftJoystickInput.y);
+		movement = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+		
+		relativeMovement = camTrans.TransformVector(movement);
 		
 		if (Input.GetButton("Run"))
 		{ 

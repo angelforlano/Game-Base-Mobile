@@ -3,6 +3,7 @@ using UnityEngine.EventSystems;
 
 public class FixedTouchField : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
+      public float sensitivity = 1;
       private Vector2 touchDist;
       private Vector2 pointerOld;
       private int pointerId;
@@ -21,12 +22,14 @@ public class FixedTouchField : MonoBehaviour, IPointerDownHandler, IPointerUpHan
                   {
                         touchDist = Input.touches[pointerId].position - pointerOld;
                         pointerOld = Input.touches[pointerId].position;
+                        touchDist *= sensitivity;
                   }
                   else
                   {
                         touchDist = new Vector2(Input.mousePosition.x, Input.mousePosition.y) - pointerOld;
                         pointerOld = Input.mousePosition;
                         touchDist.Normalize();
+                        touchDist *= sensitivity;
                   }
             }
             else
