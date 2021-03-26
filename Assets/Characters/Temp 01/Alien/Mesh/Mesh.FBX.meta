@@ -1,0 +1,182 @@
+fileFormatVersion: 2
+guid: 17687686d24629d4bbcb5ae820ccf8b5
+timeCreated: 1449766203
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Body
+    100002: Character
+    100004: Character001
+    100006: Character001Hub001
+    100008: Character001Hub002
+    100010: Character001Hub002Bone001
+    100012: Character001Hub002Bone001Bone001
+    100014: Character001LArm1
+    100016: Character001LArm2
+    100018: Character001LArmCollarbone
+    100020: Character001LArmDigit11
+    100022: Character001LArmDigit12
+    100024: Character001LArmDigit21
+    100026: Character001LArmDigit22
+    100028: Character001LArmDigit31
+    100030: Character001LArmDigit32
+    100032: Character001LArmPalm
+    100034: Character001LLeg1
+    100036: Character001LLeg2
+    100038: Character001LLegAnkle
+    100040: Character001LLegPlatform
+    100042: Character001RArm1
+    100044: Character001RArm2
+    100046: Character001RArmCollarbone
+    100048: Character001RArmDigit11
+    100050: Character001RArmDigit12
+    100052: Character001RArmDigit21
+    100054: Character001RArmDigit22
+    100056: Character001RArmDigit31
+    100058: Character001RArmDigit32
+    100060: Character001RArmPalm
+    100062: Character001RLeg1
+    100064: Character001RLeg2
+    100066: Character001RLegAnkle
+    100068: Character001RLegPlatform
+    100070: Character001Spine
+    100072: //RootNode
+    100074: Screen
+    100076: Skull
+    400000: Body
+    400002: Character
+    400004: Character001
+    400006: Character001Hub001
+    400008: Character001Hub002
+    400010: Character001Hub002Bone001
+    400012: Character001Hub002Bone001Bone001
+    400014: Character001LArm1
+    400016: Character001LArm2
+    400018: Character001LArmCollarbone
+    400020: Character001LArmDigit11
+    400022: Character001LArmDigit12
+    400024: Character001LArmDigit21
+    400026: Character001LArmDigit22
+    400028: Character001LArmDigit31
+    400030: Character001LArmDigit32
+    400032: Character001LArmPalm
+    400034: Character001LLeg1
+    400036: Character001LLeg2
+    400038: Character001LLegAnkle
+    400040: Character001LLegPlatform
+    400042: Character001RArm1
+    400044: Character001RArm2
+    400046: Character001RArmCollarbone
+    400048: Character001RArmDigit11
+    400050: Character001RArmDigit12
+    400052: Character001RArmDigit21
+    400054: Character001RArmDigit22
+    400056: Character001RArmDigit31
+    400058: Character001RArmDigit32
+    400060: Character001RArmPalm
+    400062: Character001RLeg1
+    400064: Character001RLeg2
+    400066: Character001RLegAnkle
+    400068: Character001RLegPlatform
+    400070: Character001Spine
+    400072: //RootNode
+    400074: Screen
+    400076: Skull
+    4300000: Screen
+    4300002: Skull
+    4300004: Body
+    9500000: //RootNode
+    13700000: Body
+    13700002: Screen
+    13700004: Skull
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Alien_Diffuse
+    second: {fileID: 2100000, guid: bbd96fe6a77d348499a0ff9fec1c3c71, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Alien_Screen_Diffuse
+    second: {fileID: 2100000, guid: b1bc9aecb732be648a46c4f9ea2c8f0c, type: 2}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 2
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
